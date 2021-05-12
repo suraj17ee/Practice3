@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>configExample</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>showmobil</servlet-name>
+    <servlet-class>com.content.ShowMobile</servlet-class>
+    
+    <init-param>
+      <param-name>mob1</param-name>
+      <param-value>LG</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>mob2</param-name>
+      <param-value>SAMSUNG</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>mob3</param-name>
+      <param-value>APPLE</param-value>
+    </init-param>
+    
+     <init-param>
+      <param-name>mob4</param-name>
+      <param-value>MI</param-value>
+    </init-param>
+    
+     <init-param>
+      <param-name>mob5</param-name>
+      <param-value>RealMe</param-value>
+    </init-param>
+    
+     <init-param>
+      <param-name>mob6</param-name>
+      <param-value>VIVO</param-value>
+    </init-param>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>showlaptop</servlet-name>
+    <servlet-class>com.content.ShowLaptop</servlet-class>
+    
+    <init-param>
+      <param-name>lap1</param-name>
+      <param-value>LENOVO</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>lap2</param-name>
+      <param-value>HP</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>lap3</param-name>
+      <param-value>DELL</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>lap4</param-name>
+      <param-value>MI</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>lap5</param-name>
+      <param-value>APPLE</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>lap6</param-name>
+      <param-value>MSI</param-value>
+    </init-param>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>showheadset</servlet-name>
+    <servlet-class>com.content.ShowHeadset</servlet-class>
+    
+    <init-param>
+      <param-name>headset1</param-name>
+      <param-value>BOAT</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>headset2</param-name>
+      <param-value>SKULLCANDY</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>headset3</param-name>
+      <param-value>JBL</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>headset4</param-name>
+      <param-value>BOULT</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>headset5</param-name>
+      <param-value>MIVI</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>headset6</param-name>
+      <param-value>REALME</param-value>
+    </init-param>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>showcamera</servlet-name>
+    <servlet-class>com.content.ShowCamera</servlet-class>
+    
+    <init-param>
+      <param-name>cam1</param-name>
+      <param-value>SONY</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>cam2</param-name>
+      <param-value>CANON</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>cam3</param-name>
+      <param-value>HAZELBLADE</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>cam4</param-name>
+      <param-value>GoPro</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>cam5</param-name>
+      <param-value>NIKON</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>cam6</param-name>
+      <param-value>PANASONIC</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>showmobil</servlet-name>
+    <url-pattern>/mob</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>showlaptop</servlet-name>
+    <url-pattern>/laptop</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>showheadset</servlet-name>
+    <url-pattern>/headset</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>showcamera</servlet-name>
+    <url-pattern>/camera</url-pattern>
+  </servlet-mapping>
+</web-app>
